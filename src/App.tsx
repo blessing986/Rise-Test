@@ -1,5 +1,7 @@
 import Navbar from "./components/Navbar/Navbar";
+import Diversified from "./sections/Diversified/Diversified";
 import Hero from "./sections/Hero/Hero";
+
 import Riser from "./sections/Risers/Riser";
 
 const App = () => {
@@ -9,6 +11,7 @@ const App = () => {
         <Navbar />
         <Hero />
         <Riser />
+        <Diversified />
       </main>
     </>
   );
