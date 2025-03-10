@@ -1,0 +1,84 @@
+.navContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    margin-top: 2.5rem;
+    width: 100%;
+  }
+  
+  @media (min-width: 1024px) {
+    .navContainer {
+      flex-direction: row;
+      margin-top: 0;
+      width: auto;
+    }
+  }
+  
+  .navList {
+    display: flex;
+    flex-direction: column;
+    gap: 2.25rem;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  @media (min-width: 1024px) {
+    .navList {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+  
+  .buttonContainer {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .buttonContainer {
+      width: 400px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .buttonContainer {
+      width: auto;
+    }
+  }
+  
+  .loginButton {
+    border-radius: 50px;
+    width: 50%;
+    padding: 14px 1.75rem;
+    color: #1C232B;
+    background-color: #71879C0D;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 124%;
+  }
+  
+  @media (min-width: 1024px) {
+    .loginButton {
+      width: auto;
+    }
+  }
+  
+  .getStartedButton {
+    border-radius: 50px;
+    width: 50%;
+    padding: 14px 32px;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 100%;
+    color: white;
+    background-color: #0898a0;
+  }
+  
+  @media (min-width: 1024px) {
+    .getStartedButton {
+      width: auto;
+    }
+  }
+  

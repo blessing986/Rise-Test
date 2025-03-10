@@ -1,0 +1,131 @@
+.downloadButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;
+  background-color: rgba(113, 135, 156, 0.05);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.pr1 {
+  padding-right: 4px;
+}
+
+@media (min-width: 640px) {
+  .pr1 {
+    padding-right: 8px;
+  }
+}
+
+.pr2 {
+  padding-left: 4px;
+  padding-right: 8px;
+}
+
+@media (min-width: 640px) {
+  .pr2 {
+    padding-left: 8px;
+    padding-right: 12px;
+  }
+}
+
+.downloadText {
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #1c232b;
+}
+
+@media (min-width: 1024px) {
+  .downloadText {
+    font-size: 1rem;
+  }
+}
+
+.dialog {
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.98);
+  border-radius: 16px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.modalContent {
+  background-color: white;
+  max-width: 300px;
+}
+
+@media (min-width: 640px) {
+  .modalContent {
+    max-width: 500px;
+  }
+}
+
+.centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.iconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background-color: white;
+  padding: 8px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.iphone {
+  width: 32px;
+  height: 32px;
+}
+
+.andriod {
+  width: 40px;
+  height: 28px;
+  padding-left: 12px;
+}
+
+.headingContsiner {
+  text-align: center;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.heading {
+  text-align: center;
+  font-size: 31.18px;
+  font-weight: bold;
+  color: black;
+  line-height: 124%;
+}
+
+.text {
+  text-align: center;
+  font-size: 16px;
+  font-weight: normal;
+  color: #5e7387;
+  line-height: 148%;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.barcodeWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottomText {
+  text-align: center;
+  font-size: 16px;
+  font-weight: normal;
+  color: #5e7387;
+  line-height: 148%;
+  padding-bottom: 24px;
+}

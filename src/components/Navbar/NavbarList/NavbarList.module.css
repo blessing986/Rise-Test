@@ -1,0 +1,28 @@
+.navItem {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 124%;
+  cursor: pointer;
+  position: relative;
+}
+
+@media (min-width: 1024px) {
+  .navItem {
+    font-size: 0.875rem;
+  }
+}
+
+.active {
+  color: #0898a0;
+}
+
+.indicator {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -15px;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #0898a0;
+  border-radius: 50%;
+}

@@ -1,0 +1,241 @@
+/* Hero.module.css */
+.heroSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .heroSection {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .heroSection {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .heroSection {
+    flex-direction: row;
+    margin-bottom: 2.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .heroSection {
+    margin-bottom: 2.5rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .heroTextContainer {
+    width: 50%;
+    padding-left: 50px;
+  }
+}
+
+.heroText {
+  margin-top: 3.5rem;
+}
+
+@media (min-width: 1024px) {
+  .heroText {
+    margin-top: 6rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .heroTextContainer {
+    margin-top: 0;
+  }
+}
+
+.heroButton {
+  color: #41bcc4;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: -3%;
+  line-height: 100%;
+  background-color: #edffff;
+  padding: 0.5rem 0.75rem;
+  border-radius: 32px;
+  border: 1px solid #41bcc4;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.heroSubContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .heroSubContainer {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .heroSubContainer {
+    align-items: flex-start;
+    text-align: start;
+  }
+}
+
+@media (min-width: 1280px) {
+  .heroSubContainer {
+    margin-bottom: 8rem;
+  }
+}
+
+.heroTitle {
+  font-weight: 600;
+  font-size: 2.25rem;
+  line-height: 124%;
+}
+
+@media (min-width: 768px) {
+  .heroTitle {
+    font-size: 4.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .heroTitle {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .heroTitle {
+    font-size: 3.75rem;
+  }
+}
+
+.highlight {
+  color: #0898a0;
+  font-weight: 400; 
+  font-style: italic;
+}
+
+.heroDescription {
+  color: #5e7387;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 148%;
+}
+
+@media (min-width: 640px) {
+  .heroDescription {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .heroDescription {
+    font-size: 1.25rem;
+  }
+}
+
+.ctaContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 90px;
+}
+
+@media (min-width: 640px) {
+  .ctaContainer {
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: 1024px) {
+  .ctaContainer {
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .ctaContainer {
+    margin-bottom: 0;
+  }
+}
+
+.ctaButton {
+  background-color: #0898a0;
+  color: white;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 124%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.875rem 0;
+  border-radius: 50px;
+  transition: all 1s ease-in-out;
+  width: 40%;
+}
+
+@media (min-width: 640px) {
+  .ctaButton {
+    width: auto;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .ctaButton {
+    font-size: 1rem;
+  }
+}
+
+.ctaButton span {
+    padding-right: 0.75rem;
+}
+
+.icon {
+  transition: transform 0.3s ease-in-out;
+}
+
+.ctaButton:hover .icon {
+  transform: translateX(4px);
+}
+
+.heroImage {
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .heroImage {
+    width: 400px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .heroImage {
+    width: 550px;
+  }
+}

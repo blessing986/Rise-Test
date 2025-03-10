@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 13.05px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 20px;
+  }
+  
+  .heading {
+    color: #5e7387;
+    font-weight: 400;
+    font-size: 13.74px;
+    line-height: 124%;
+  }
+  
