@@ -4,6 +4,7 @@ import Hero from "./sections/Hero/Hero";
 import Numbers from "./sections/Numbers/Numbers";
 
 import Riser from "./sections/Risers/Riser";
+import Services from "./sections/Services";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Riser />
         <Diversified />
         <Numbers />
+        <Services />
       </main>
     </>
   );

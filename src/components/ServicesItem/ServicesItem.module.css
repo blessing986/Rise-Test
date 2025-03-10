@@ -1,0 +1,41 @@
+.ctaButton {
+    background-color: #71879C0D;
+    color: #171C22;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.875rem 0;
+    border-radius: 50px;
+    transition: all 1s ease-in-out;
+    width: 90%;
+  }
+  
+  @media (min-width: 640px) {
+    .ctaButton {
+      width: auto;
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .ctaButton {
+      font-size: 1rem;
+    }
+  }
+  
+  .ctaButton span {
+    padding-right: 0.75rem;
+  }
+  
+  .icon {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .ctaButton:hover .icon {
+    transform: translateX(4px);
+  }
+  
