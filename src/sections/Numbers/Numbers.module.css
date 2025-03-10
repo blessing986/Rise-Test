@@ -1,0 +1,112 @@
+.numbersContainer {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-top: 10rem;
+}
+
+@media (min-width: 1024px) {
+  .numbersContainer {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+.title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 124%;
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+@media (min-width: 640px) {
+  .title {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .title {
+    font-size: 48px;
+  }
+}
+
+.highlight {
+  font-style: italic;
+  font-weight: 500;
+  color: #0898a0;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 640px) {
+  .gridContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.number {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 124%;
+  color: #1c232b;
+}
+
+@media (min-width: 1024px) {
+  .number {
+    font-size: 60px;
+  }
+}
+
+.subtitle {
+  color: #0898a0;
+  font-size: 16px;
+}
+
+@media (min-width: 1024px) {
+  .subtitle {
+    font-size: 22px;
+  }
+}
+
+.lastItem {
+  grid-column: span 2;
+  margin-top: 2.5rem;
+}
+
+@media (min-width: 640px) {
+  .lastItem {
+    grid-column: auto;
+    margin-top: 0;
+  }
+}
+
+.imageContainer {
+  display: flex;
+}
+
+.image {
+  width: 95px;
+}
+
+@media (min-width: 1024px) {
+  .image {
+    width: 100%;
+  }
+}

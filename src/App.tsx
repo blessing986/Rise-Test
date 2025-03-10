@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar/Navbar";
 import Diversified from "./sections/Diversified/Diversified";
 import Hero from "./sections/Hero/Hero";
+import Numbers from "./sections/Numbers/Numbers";
 
 import Riser from "./sections/Risers/Riser";
 
@@ -12,6 +13,7 @@ const App = () => {
         <Hero />
         <Riser />
         <Diversified />
+        <Numbers />
       </main>
     </>
   );
