@@ -5,6 +5,7 @@ import Numbers from "./sections/Numbers/Numbers";
 import Riser from "./sections/Risers/Riser";
 import Services from "./sections/Services/Services";
 import styles from "./App.module.css";
+import Transaction from "./sections/Transaction/Transaction";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Diversified />
         <Numbers />
         <Services />
+        <Transaction />
       </main>
     </>
   );
