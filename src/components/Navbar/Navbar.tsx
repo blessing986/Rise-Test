@@ -12,7 +12,7 @@ const Navbar = () => {
       <header>
         {/* Desktop view */}
         <section className="hidden lg:block">
-          <div className="flex justify-between items-center px-[100px] py-6">
+          <div className="flex justify-between items-center lg:px-6 xl:px-[100px] py-6">
             <img src={logo} alt="logo" />
 
             <NavItem />
@@ -20,7 +20,7 @@ const Navbar = () => {
         </section>
 
         {/* Mobile View */}
-        <section className="lg:hidden px-5 py-6 flex justify-between items-center">
+        <section className="lg:hidden px-5 sm:px-8 py-6 flex justify-between items-center">
           <img src={logo} alt="logo" />
           <button onClick={() => setIsOpen(!isOpen)}>
             <img src={isOpen ? close : menu} alt="menu" />

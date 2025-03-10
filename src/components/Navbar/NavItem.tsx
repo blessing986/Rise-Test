@@ -19,10 +19,10 @@ const NavItem = () => {
         </ul>
 
         <div className="flex justify-between gap-2">
-          <button className="rounded-[50px] w-[50%] lg:w-auto py-[14px] px-6 text-[#1C232B] bg-[#71879C0D] font-medium text-sm leading-[124%]">
+          <button className="rounded-[50px] w-[50%] lg:w-auto py-[14px] px-7 text-[#1C232B] bg-[#71879C0D] font-medium text-sm leading-[124%]">
             Log In
           </button>
-          <button className="rounded-[50px] w-[50%] lg:w-auto py-[14px] px-5 text-white bg-[#0898A0] font-semibold text-sm leading-[100%]">
+          <button className="rounded-[50px] w-[50%] lg:w-auto py-[14px] px-8 text-white bg-[#0898A0] font-semibold text-sm leading-[100%]">
             Get started
           </button>
         </div>
