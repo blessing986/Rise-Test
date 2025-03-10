@@ -18,16 +18,11 @@ const ServicesItem = ({
 }: ServicesItemType) => {
   return (
     <>
-      <div className="px-6 lg:px-[50px] mt-10">
-        <div
-          className={`flex flex-col md:flex-row justify-between items-center bg-[${bgColor}] px-4 lg:px-0 lg:pl-10 pt-10 lg:pt-0 rounded-[24px]`}>
-          <div className="flex flex-col gap-[32px] md:w-[600px] lg:w-[430px] xl:w-[526px]">
-            <h1 className="text-[#1C232B] font-semibold text-[24px] sm:text-[26px] md:text-[36px] xl:text-[48px] leading-[124%]">
-              {title}
-            </h1>
-            <p className="text-[#71879C] text-[16px] sm:text-[18px] lg:text-[20px] font-normal leading-[148%]">
-              {description}
-            </p>
+      <div className={styles.container}>
+        <div className={styles.box} style={{ backgroundColor: bgColor }}>
+          <div className={styles.textContainer}>
+            <h1 className={styles.title}>{title}</h1>
+            <p className={styles.description}>{description}</p>
 
             <div>
               <button className={styles.ctaButton}>

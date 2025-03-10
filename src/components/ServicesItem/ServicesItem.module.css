@@ -1,41 +1,147 @@
+.container {
+  padding-left: 1.5rem; 
+  padding-right: 1.5rem;
+  margin-top: 2.5rem; 
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2.5rem; 
+  border-radius: 24px;
+  padding-left: 1rem; 
+  padding-right: 1rem;
+}
+
+@media (min-width: 768px) {
+  .box {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1024px) {
+  .box {
+    padding-left: 2.5rem;
+    padding-right: 0;
+    padding-top: 0;
+  }
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .textContainer {
+    width: 600px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .textContainer {
+    width: 430px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .textContainer {
+    width: 526px;
+  }
+}
+
+.title {
+  color: #1C232B;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 124%;
+}
+
+@media (min-width: 640px) {
+  .title {
+    font-size: 26px;
+  }
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 36px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .title {
+    font-size: 48px;
+  }
+}
+
+.description {
+  color: #71879C;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 148%;
+}
+
+@media (min-width: 640px) {
+  .description {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .description {
+    font-size: 20px;
+  }
+}
+
 .ctaButton {
-    background-color: #71879C0D;
-    color: #171C22;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0.875rem 0;
-    border-radius: 50px;
-    transition: all 1s ease-in-out;
-    width: 90%;
+  background-color: #71879c0d;
+  color: #171c22;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.875rem 0;
+  border-radius: 50px;
+  transition: all 1s ease-in-out;
+  width: 90%;
+}
+
+@media (min-width: 640px) {
+  .ctaButton {
+    width: auto;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
-  
-  @media (min-width: 640px) {
-    .ctaButton {
-      width: auto;
-      padding-left: 2.5rem;
-      padding-right: 2.5rem;
-    }
+}
+
+@media (min-width: 1024px) {
+  .ctaButton {
+    font-size: 1rem;
   }
-  
-  @media (min-width: 1024px) {
-    .ctaButton {
-      font-size: 1rem;
-    }
-  }
-  
-  .ctaButton span {
-    padding-right: 0.75rem;
-  }
-  
-  .icon {
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .ctaButton:hover .icon {
-    transform: translateX(4px);
-  }
-  
+}
+
+.ctaButton span {
+  padding-right: 0.75rem;
+}
+
+.icon {
+  transition: transform 0.3s ease-in-out;
+}
+
+.ctaButton:hover .icon {
+  transform: translateX(4px);
+}

@@ -2,14 +2,14 @@ import Navbar from "./components/Navbar/Navbar";
 import Diversified from "./sections/Diversified/Diversified";
 import Hero from "./sections/Hero/Hero";
 import Numbers from "./sections/Numbers/Numbers";
-
 import Riser from "./sections/Risers/Riser";
-import Services from "./sections/Services";
+import Services from "./sections/Services/Services";
+import styles from "./App.module.css";
 
 const App = () => {
   return (
     <>
-      <main className="max-w-[1440px] m-auto">
+      <main className={styles.mainContainer}>
         <Navbar />
         <Hero />
         <Riser />
