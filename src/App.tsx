@@ -8,6 +8,7 @@ import styles from "./App.module.css";
 import Transaction from "./sections/Transaction/Transaction";
 import Expert from "./sections/Experts/Expert";
 import Blog from "./sections/Blog/Blog";
+import Community from "./sections/Community/Community";
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
         <Transaction />
         <Expert />
         <Blog />
+        <Community />
       </main>
     </>
   );
