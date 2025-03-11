@@ -7,6 +7,7 @@ import Services from "./sections/Services/Services";
 import styles from "./App.module.css";
 import Transaction from "./sections/Transaction/Transaction";
 import Expert from "./sections/Experts/Expert";
+import Blog from "./sections/Blog/Blog";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
         <Services />
         <Transaction />
         <Expert />
+        <Blog />
       </main>
     </>
   );

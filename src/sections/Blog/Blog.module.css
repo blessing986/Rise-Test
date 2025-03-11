@@ -1,0 +1,169 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-top: 7rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    gap: 40px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    gap: 102px;
+    margin-top: 9rem;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+.textContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+@media (min-width: 1024px) {
+  .textContainer {
+    width: 496px;
+  }
+}
+
+.heading {
+  color: #1C232B;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 124%;
+}
+
+@media (min-width: 768px) {
+  .heading {
+    font-size: 48px;
+  }
+}
+
+.description {
+  color: #71879C;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 148%;
+}
+
+.divider {
+  border-right: 1px solid rgba(113, 135, 156, 0.2);
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .divider {
+    display: block;
+  }
+}
+
+.blogItems {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+@media (min-width: 1024px) {
+  .blogItems {
+    gap: 24px;
+    width: 320px;
+  }
+}
+
+.ctaButton {
+  background-color: #0898a0;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.875rem 0;
+  border-radius: 50px;
+  transition: all 1s ease-in-out;
+  width: 90%;
+  display: none;
+}
+
+@media (min-width: 640px) {
+  .ctaButton {
+    width: auto;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .ctaButton {
+    display: flex;
+  }
+}
+
+@media (min-width: 1024px) {
+  .ctaButton {
+    font-size: 1rem;
+  }
+}
+
+.ctaButton span {
+  padding-right: 0.75rem;
+}
+
+.icon {
+  transition: transform 0.3s ease-in-out;
+}
+
+.ctaButton:hover .icon {
+  transform: translateX(4px);
+}
+
+.Button {
+  background-color: #0898a0;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.875rem 0;
+  border-radius: 50px;
+  transition: all 1s ease-in-out;
+  width: 50%;
+}
+
+@media (min-width: 640px) {
+  .Button {
+    width: auto;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .Button {
+    display: none;
+  }
+}
+
+.Button span {
+  padding-right: 0.75rem;
+}
+
+.Button:hover .icon {
+  transform: translateX(4px);
+}
