@@ -6,6 +6,7 @@ import Riser from "./sections/Risers/Riser";
 import Services from "./sections/Services/Services";
 import styles from "./App.module.css";
 import Transaction from "./sections/Transaction/Transaction";
+import Expert from "./sections/Experts/Expert";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Numbers />
         <Services />
         <Transaction />
+        <Expert />
       </main>
     </>
   );

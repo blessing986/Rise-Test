@@ -1,0 +1,57 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.image {
+  transition: transform 0.3s ease-in-out;
+}
+
+.image:hover {
+  transform: translateY(-8px);
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.name {
+  font-weight: bold;
+  color: #1c232b;
+  line-height: 124%;
+  font-size: 14px;
+}
+
+@media (min-width: 1024px) {
+  .name {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .name {
+    font-size: 24px;
+  }
+}
+
+.role {
+  font-weight: bold;
+  color: #71879c;
+  line-height: 124%;
+  font-size: 13px;
+}
+
+@media (min-width: 1024px) {
+  .role {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .role {
+    font-size: 20px;
+  }
+}
