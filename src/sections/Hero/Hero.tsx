@@ -4,6 +4,8 @@ import DownloadApp from "../../components/DownloadApp/DownloadApp";
 import Partners from "../../components/Partners/Partners";
 import arrow from "../../assets/arrow.png";
 import styles from "./Hero.module.css";
+import iphone from "../../assets/iphone.png";
+import playstore from "../../assets/playstore.png";
 
 const Hero = () => {
   return (
@@ -28,7 +30,7 @@ const Hero = () => {
 
             <div className={styles.ctaContainer}>
               <button className={styles.ctaButton}>
-                <span>Get Started</span>
+                <span>Start Investing</span>
                 <img
                   src={arrowRight}
                   alt="arrowRight"
@@ -36,7 +38,12 @@ const Hero = () => {
                 />
               </button>
 
-              <DownloadApp />
+              <DownloadApp
+                iphoneIcon={iphone}
+                playstoreIcon={playstore}
+                bgColor="#71879C1A"
+                textColor="#1C232B"
+              />
             </div>
           </div>
 

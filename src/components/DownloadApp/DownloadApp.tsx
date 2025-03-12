@@ -1,13 +1,22 @@
 import { useRef } from "react";
 import styles from "./DownloadApp.module.css";
-
-import iphone from "../../assets/iphone.png";
 import iphone1 from "../../assets/iphone1.png";
-import playstore from "../../assets/playstore.png";
 import andriod from "../../assets/andriod.png";
 import barcode from "../../assets/barcode.png";
 
-export default function DownloadApp() {
+interface DownloadAppType {
+  iphoneIcon: string;
+  playstoreIcon: string;
+  bgColor: string;
+  textColor: string;
+}
+
+export default function DownloadApp({
+  iphoneIcon,
+  playstoreIcon,
+  bgColor,
+  textColor,
+}: DownloadAppType) {
   const dialogRef = useRef<HTMLDialogElement | null>(null);
 
   const toggleModalHandler = () => {
@@ -27,15 +36,17 @@ export default function DownloadApp() {
   return (
     <>
       <div onClick={toggleModalHandler}>
-        <button className={styles.downloadButton}>
+        <button className={`${styles.downloadButton} bg-${bgColor}`}>
           <div className={styles.pr1}>
-            <img src={iphone} alt="iphone" />
+            <img src={iphoneIcon} alt="iphone" />
           </div>
           |
           <div className={styles.pr2}>
-            <img src={playstore} alt="playstore" />
+            <img src={playstoreIcon} alt="playstore" />
           </div>
-          <h1 className={styles.downloadText}>Download App</h1>
+          <h1 className={`${styles.downloadText} ${textColor}`}>
+            Download App
+          </h1>
         </button>
       </div>
 
@@ -68,6 +79,8 @@ export default function DownloadApp() {
             </p>
           </div>
         </div>
+
+        
       </dialog>
     </>
   );
