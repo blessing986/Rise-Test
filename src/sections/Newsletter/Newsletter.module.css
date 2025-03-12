@@ -1,0 +1,121 @@
+.container {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-top: 5rem;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 7rem;
+  }
+}
+
+.newsletterBox {
+  background-color: #41bcc4;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .newsletterBox {
+    flex-direction: row;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+@media (min-width: 1024px) {
+  .textContainer {
+    width: 40%;
+  }
+}
+
+.heading {
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 100%;
+}
+
+.description {
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 124%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+@media (min-width: 768px) {
+  .inputGroup {
+    flex-direction: row;
+  }
+}
+
+.inputField {
+  background-color: #0898a0;
+  color: white;
+  padding: 18px 24px;
+  border-radius: 50px;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.inputField::placeholder {
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .inputField.firstName {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .inputField.lastName {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
+
+.emailContainer {
+  display: flex;
+  position: relative;
+}
+
+.submitButton {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 13.67px 20.5px;
+  background-color: white;
+  border-radius: 30px;
+  cursor: pointer;
+}
