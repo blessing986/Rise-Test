@@ -1,0 +1,198 @@
+.container {
+  margin-top: 6rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (min-width: 1280px) {
+  .container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: rgba(113, 135, 156, 0.1);
+  border-radius: 24px;
+  padding-top: 4rem;
+}
+
+@media (min-width: 1024px) {
+  .wrapper {
+    flex-direction: row;
+    padding-left: 3rem;
+  }
+}
+
+.content {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.title {
+  color: #71879c;
+  font-weight: 500;
+  font-size: 15.18px;
+  line-height: 124%;
+  padding-bottom: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .title {
+    padding-bottom: 0.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .title {
+    font-size: 18px;
+  }
+}
+
+.heading {
+  color: #1c232b;
+  font-weight: 600;
+  font-size: 30.36px;
+  line-height: 37.1px;
+}
+
+@media (min-width: 1024px) {
+  .heading {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 62.4px;
+  }
+}
+
+.ctaContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 90px;
+  margin-top: 100px;
+}
+
+@media (min-width: 640px) {
+  .ctaContainer {
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1024px) {
+  .ctaContainer {
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .ctaContainer {
+    margin-bottom: 0;
+    margin-top: 60px;
+  }
+}
+
+.ctaButton {
+  background-color: #0898a0;
+  color: white;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 124%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.875rem 0;
+  border-radius: 50px;
+  transition: all 1s ease-in-out;
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .ctaButton {
+    width: auto;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .ctaButton {
+    font-size: 1rem;
+    width: 45%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .ctaButton {
+    width: 45%;
+  }
+}
+
+.ctaButton span {
+  padding-right: 0.75rem;
+}
+
+.icon {
+  transition: transform 0.3s ease-in-out;
+}
+
+.ctaButton:hover .icon {
+  transform: translateX(4px);
+}
+
+.downloadContainer {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+@media (min-width: 640px) {
+  .downloadContainer {
+    width: auto;
+    margin-top: 0;
+  }
+}
+
+.relativeContainer {
+  position: relative;
+  margin-top: 5rem;
+}
+
+.risePhoneImage {
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .risePhoneImage {
+    width: 90%;
+  }
+}
+
+.absolutePosition {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.riseBallImage {
+  width: 7rem;
+}
+
+@media (min-width: 1024px) {
+  .riseBallImage {
+    width: 100%;
+  }
+}
