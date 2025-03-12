@@ -14,7 +14,7 @@ const Navbar = () => {
   useEffect(() => {
     const isDesktop = window.innerWidth >= 1024;
 
-    if (isOpen || isDesktop) {
+    if (isOpen) {
       document.body.classList.add("no-scroll");
       menuRef.current?.querySelector("button")?.focus();
     } else {
