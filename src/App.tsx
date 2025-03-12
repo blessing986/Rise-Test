@@ -9,21 +9,28 @@ import Transaction from "./sections/Transaction/Transaction";
 import Expert from "./sections/Experts/Expert";
 import Blog from "./sections/Blog/Blog";
 import Community from "./sections/Community/Community";
+import RiseApp from "./sections/RiseApp/RiseApp";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   return (
     <>
-      <main className={styles.mainContainer}>
-        <Navbar />
-        <Hero />
-        <Riser />
-        <Diversified />
-        <Numbers />
-        <Services />
-        <Transaction />
-        <Expert />
-        <Blog />
-        <Community />
+      <main>
+        <div className={styles.mainContainer}>
+          <Navbar />
+          <Hero />
+          <Riser />
+          <Diversified />
+          <Numbers />
+          <Services />
+          <Transaction />
+          <Expert />
+          <Blog />
+          <Community />
+          <RiseApp />
+        </div>
+
+        <Footer />
       </main>
     </>
   );
