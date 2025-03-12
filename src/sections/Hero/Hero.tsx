@@ -12,8 +12,11 @@ const Hero = () => {
     <section className={styles.heroSection}>
       <div className={styles.heroTextContainer}>
         <div className={styles.heroText}>
-          <button className={styles.heroButton}>
-            Read our cost of living report 2024 <img src={arrow} alt="arrow" />
+          <button
+            className={styles.heroButton}
+            aria-label="Read our cost of living report 2024">
+            Read our cost of living report 2024{" "}
+            <img src={arrow} alt="" aria-hidden="true" />
           </button>
 
           <div className={styles.heroSubContainer}>
@@ -29,11 +32,12 @@ const Hero = () => {
             </p>
 
             <div className={styles.ctaContainer}>
-              <button className={styles.ctaButton}>
+              <button className={styles.ctaButton} aria-label="Start investing">
                 <span>Start Investing</span>
                 <img
                   src={arrowRight}
-                  alt="arrowRight"
+                  alt=""
+                  aria-hidden="true"
                   className={styles.icon}
                 />
               </button>
@@ -54,7 +58,7 @@ const Hero = () => {
       </div>
 
       <div className={styles.heroImage}>
-        <img src={hero} alt="hero" />
+        <img src={hero} alt="A mobile device showcase the app's UI" />
       </div>
     </section>
   );

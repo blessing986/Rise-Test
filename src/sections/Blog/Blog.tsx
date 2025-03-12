@@ -16,14 +16,19 @@ const Blog = () => {
         </p>
 
         <div>
-          <button className={styles.ctaButton}>
+          <button className={styles.ctaButton} aria-label="Read the blog">
             <span>Read the blog</span>
-            <img src={arrowRight} alt="arrowRight" className={styles.icon} />
+            <img
+              src={arrowRight}
+              alt=""
+              className={styles.icon}
+              aria-hidden="true"
+            />
           </button>
         </div>
       </div>
 
-      <div className={styles.divider}></div>
+      <div className={styles.divider} role="presentation"></div>
 
       <div className={styles.blogItems}>
         <BlogItem
@@ -46,9 +51,14 @@ const Blog = () => {
       </div>
 
       <div>
-        <button className={styles.Button}>
+        <button className={styles.Button} aria-label="Read the blog">
           <span>Read the blog</span>
-          <img src={arrowRight} alt="arrowRight" className={styles.icon} />
+          <img
+            src={arrowRight}
+            alt=""
+            className={styles.icon}
+            aria-hidden="true"
+          />
         </button>
       </div>
     </div>

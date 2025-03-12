@@ -20,18 +20,23 @@ const Diversified = () => {
               your device. Simple, right?
             </p>
 
-            <button className={styles.ctaButton}>
+            <button className={styles.ctaButton} aria-label="Start Investing">
               <span>Start Investing</span>
-              <img src={arrowRight} alt="arrowRight" className={styles.icon} />
+              <img
+                src={arrowRight}
+                alt=""
+                aria-hidden="true"
+                className={styles.icon}
+              />
             </button>
           </div>
 
           <div className={styles.imageSmall}>
-            <img src={diversifiedSmall} alt="diversifiedSmall" />
+            <img src={diversifiedSmall} alt="A mobile device" />
           </div>
 
           <div className={styles.imageLarge}>
-            <img src={diversified} alt="diversified" />
+            <img src={diversified} alt="A mobile device" />
           </div>
         </div>
       </section>

@@ -36,13 +36,15 @@ export default function DownloadApp({
   return (
     <>
       <div onClick={toggleModalHandler}>
-        <button className={`${styles.downloadButton} bg-${bgColor}`}>
+        <button
+          className={`${styles.downloadButton} bg-${bgColor}`}
+          aria-label="Download the app">
           <div className={styles.pr1}>
-            <img src={iphoneIcon} alt="iphone" />
+            <img src={iphoneIcon} alt="Download from App Store" />
           </div>
           |
           <div className={styles.pr2}>
-            <img src={playstoreIcon} alt="playstore" />
+            <img src={playstoreIcon} alt="Download from Google Play" />
           </div>
           <h1 className={`${styles.downloadText} ${textColor}`}>
             Download App
@@ -53,25 +55,37 @@ export default function DownloadApp({
       <dialog
         ref={dialogRef}
         className={styles.dialog}
+        aria-labelledby="modal-title"
+        aria-describedby="modal-description"
         onClick={toggleBackdropHandler}>
         <div className={styles.modalContent}>
           <div className={styles.centered}>
             <div className={styles.iconWrapper}>
               <div>
-                <img src={iphone1} alt="iphone1" className={styles.iphone} />
+                <img
+                  src={iphone1}
+                  alt="App interface on iPhone"
+                  className={styles.iphone}
+                />
               </div>
-              <img src={andriod} alt="andriod" className={styles.andriod} />
+              <img
+                src={andriod}
+                alt="App interface on Android"
+                className={styles.andriod}
+              />
             </div>
           </div>
 
           <div className={styles.headingContsiner}>
-            <h1 className={styles.heading}>Scan to download</h1>
-            <p className={styles.text}>
+            <h1 id="modal-title" className={styles.heading}>
+              Scan to download
+            </h1>
+            <p id="modal-description" className={styles.text}>
               Position your phone camera within the frame and follow the link to
               download.
             </p>
             <div className={styles.barcodeWrapper}>
-              <img src={barcode} alt="Barcode" />
+              <img src={barcode} alt="QR Code for downloading the app" />
             </div>
 
             <p className={styles.bottomText}>
@@ -79,8 +93,6 @@ export default function DownloadApp({
             </p>
           </div>
         </div>
-
-        
       </dialog>
     </>
   );

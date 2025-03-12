@@ -4,17 +4,18 @@ interface ExpertsItemType {
   img: string;
   name: string;
   role: string;
+  alt: string;
 }
 
-const ExpertsItem = ({ img, name, role }: ExpertsItemType) => {
+const ExpertsItem = ({ img, name, role,alt }: ExpertsItemType) => {
   return (
-    <div className={styles.container}>
-      <img src={img} alt={name} className={styles.image} />
+    <article className={styles.container}>
+      <img src={img} alt={alt} className={styles.image} />
       <div className={styles.details}>
         <h3 className={styles.name}>{name}</h3>
         <span className={styles.role}>{role}</span>
       </div>
-    </div>
+    </article>
   );
 };
 

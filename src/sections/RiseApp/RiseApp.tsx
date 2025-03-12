@@ -12,16 +12,17 @@ const RiseApp = () => {
       <div className={styles.container}>
         <div className={styles.wrapper}>
           <div className={styles.content}>
-            <h5 className={styles.title}>Download The Rise App</h5>
+            <h3 className={styles.title}>Download The Rise App</h3>
             <h1 className={styles.heading}>Rise makes investing simple.</h1>
 
             <div className={styles.ctaContainer}>
-              <button className={styles.ctaButton}>
+              <button className={styles.ctaButton} aria-label="Start Investing">
                 <span>Start Investing</span>
                 <img
                   src={arrowRight}
-                  alt="arrowRight"
+                  alt=""
                   className={styles.icon}
+                  aria-hidden="true"
                 />
               </button>
 
@@ -39,12 +40,16 @@ const RiseApp = () => {
           <div className={styles.relativeContainer}>
             <img
               src={risePhone}
-              alt="risePhone"
+              alt="Rise app displayed on a phone screen"
               className={styles.risePhoneImage}
             />
 
             <div className={styles.absolutePosition}>
-              <img src={riseBall} alt="riseBall" className="w-28 lg:w-full" />
+              <img
+                src={riseBall}
+                alt="Decorative circular design element"
+                className={styles.riseBallImage}
+              />
             </div>
           </div>
         </div>

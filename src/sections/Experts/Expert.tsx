@@ -6,21 +6,32 @@ import finance from "../../assets/finance.png";
 
 const Expert = () => {
   return (
-    <div className={styles.container}>
-      <h1 className={styles.heading}>
+    <section className={styles.container} aria-labelledby="experts-heading">
+      <h2 id="experts-heading" className={styles.heading}>
         Meet the <span className={styles.highlight}>Experts</span>
-      </h1>
+      </h2>
 
       <div className={styles.gridContainer}>
-        <ExpertsItem img={ceo} name="Eke Urum" role="Founder & CEO" />
+        <ExpertsItem
+          img={ceo}
+          name="Eke Urum"
+          role="Founder & CEO"
+          alt="Portrait of Eke Urum, Founder & CEO"
+        />
         <ExpertsItem
           img={financeLead}
           name="Sheriff Adeoti"
           role="Finance Lead"
+          alt="Portrait of Sheriff Adeoti, Finance Lead"
         />
-        <ExpertsItem img={finance} name="Damilare Akinlotan" role="Finance" />
+        <ExpertsItem
+          img={finance}
+          name="Damilare Akinlotan"
+          role="Finance"
+          alt="Portrait of Damilare Akinlotan, Finance team member"
+        />
       </div>
-    </div>
+    </section>
   );
 };
 

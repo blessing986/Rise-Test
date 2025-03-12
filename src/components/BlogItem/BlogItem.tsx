@@ -8,14 +8,14 @@ interface BlogItemType {
 
 const BlogItem = ({ img, label, description }: BlogItemType) => {
   return (
-    <div className={styles.blogItem}>
+    <article className={styles.blogItem}>
       <img src={img} alt={label} className={styles.image} />
 
       <div className={styles.textContainer}>
-        <h6 className={styles.label}>{label}</h6>
+        <h3 className={styles.label}>{label}</h3>
         <p className={styles.description}>{description}</p>
       </div>
-    </div>
+    </article>
   );
 };
 

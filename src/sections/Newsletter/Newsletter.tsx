@@ -2,6 +2,10 @@ import arrow from "../../assets/arrowRightGreen.png";
 import styles from "./Newsletter.module.css";
 
 const Newsletter = () => {
+  const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+  };
+
   return (
     <>
       <div className={styles.container}>
@@ -15,27 +19,46 @@ const Newsletter = () => {
 
           <form className={styles.form}>
             <div className={styles.inputGroup}>
+              <label htmlFor="firstName" className={styles.srOnly}>
+                First Name
+              </label>
               <input
+                id="firstName"
                 type="text"
                 placeholder="First name"
                 className={`${styles.inputField} ${styles.firstName}`}
+                aria-label="First name"
               />
+              <label htmlFor="lastName" className={styles.srOnly}>
+                Last Name
+              </label>
               <input
+                id="lastName"
                 type="text"
                 placeholder="Last name"
                 className={`${styles.inputField} ${styles.lastName}`}
+                aria-label="Last name"
               />
             </div>
 
             <div className={styles.emailContainer}>
+              <label htmlFor="email" className={styles.srOnly}>
+                Email Address
+              </label>
               <input
+                id="email"
                 type="email"
                 placeholder="Email address"
                 className={styles.inputField}
+                aria-label="Email address"
               />
-              <div className={styles.submitButton}>
-                <img src={arrow} alt="arrow" />
-              </div>
+              <button
+                type="submit"
+                className={styles.submitButton}
+                aria-label="Subscribe"
+                onClick={handleClick}>
+                <img src={arrow} alt="arrowSubmit" />
+              </button>
             </div>
           </form>
         </div>

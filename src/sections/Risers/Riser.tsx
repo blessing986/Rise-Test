@@ -5,19 +5,18 @@ import henry from "../../assets/henry.png";
 
 const Riser = () => {
   return (
-    <div className={styles.container}>
-      <h1 className={styles.heading}>
+    <section className={styles.container} aria-labelledby="risers-heading">
+      <h1 id="risers-heading" className={styles.heading}>
         Meet Some <span className={styles.highlight}>Risers</span>
       </h1>
 
       <div className={styles.imageContainer}>
-        <img src={sanni} alt="sanni" className={styles.image} />
-        <img src={layo} alt="layo" className={styles.image} />
-        <img src={henry} alt="henry" className={styles.image} />
+        <img src={sanni} alt="Portrait of Sanni" className={styles.image} />
+        <img src={layo} alt="Portrait of Layo" className={styles.image} />
+        <img src={henry} alt="Portrait of Henry" className={styles.image} />
       </div>
-    </div>
+    </section>
   );
 };
 
 export default Riser;
-

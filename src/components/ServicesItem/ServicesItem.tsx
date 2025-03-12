@@ -7,6 +7,7 @@ interface ServicesItemType {
   bgColor: string;
   buttonText: string;
   img: string;
+  imgAlt?: string;
 }
 
 const ServicesItem = ({
@@ -15,21 +16,25 @@ const ServicesItem = ({
   bgColor,
   buttonText,
   img,
+  imgAlt = "Service related illustration",
 }: ServicesItemType) => {
   return (
     <>
       <div className={styles.container}>
         <div className={styles.box} style={{ backgroundColor: bgColor }}>
           <div className={styles.textContainer}>
-            <h1 className={styles.title}>{title}</h1>
+            <h2 className={styles.title}>{title}</h2>
             <p className={styles.description}>{description}</p>
 
             <div>
-              <button className={styles.ctaButton}>
+              <button
+                className={styles.ctaButton}
+                type="button"
+                aria-label={buttonText}>
                 <span>{buttonText}</span>
                 <img
                   src={arrowRightBlack}
-                  alt="arrowRightBlack"
+                  alt="Arrow pointing right"
                   className={styles.icon}
                 />
               </button>
@@ -37,7 +42,7 @@ const ServicesItem = ({
           </div>
 
           <div>
-            <img src={img} alt={title} />
+            <img src={img} alt={imgAlt} />
           </div>
         </div>
       </div>

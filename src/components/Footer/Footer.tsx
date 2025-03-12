@@ -30,7 +30,7 @@ const Footer = () => {
                 <div className={styles.footerLogoSection}>
                   <div className={styles.flexColumnGap12}>
                     <div>
-                      <img src={logoFooter} alt="logoFooter" />
+                      <img src={logoFooter} alt="Risevest company logo" />
                     </div>
                     <p className={styles.textNormalSmall}>
                       Global dollar investments made simple.
@@ -39,7 +39,7 @@ const Footer = () => {
 
                   <img
                     src={footer}
-                    alt="footer"
+                    alt="NDPR Data Compliant logo"
                     className={styles.footerImage}
                   />
                 </div>
@@ -116,7 +116,9 @@ const Footer = () => {
                 />
 
                 <div>
-                  <button className={styles.ctaButton}>
+                  <button
+                    className={styles.ctaButton}
+                    aria-label="Start Investing">
                     <span>Start Investing</span>
                     <img
                       src={arrowRight}
@@ -135,30 +137,34 @@ const Footer = () => {
               </div>
 
               <ul className={styles.socialList}>
-                <li className={styles.socialListItem}>
+                <li className={styles.socialListItem} aria-label="LinkedIn">
                   <img src={linkedIn} alt="linkedIn" />
                   <span className={styles.socialListText}>LinkedIn</span>
                 </li>
-                <li className={styles.socialListItem}>
+                <li className={styles.socialListItem} aria-label="Twitter">
                   <img src={twitter} alt="twitter" />
                   <span className={styles.socialListText}>Twitter</span>
                 </li>
-                <li className={styles.socialListItem}>
+                <li className={styles.socialListItem} aria-label="Instagram">
                   <img src={instagram} alt="instagram" />
                   <span className={styles.socialListText}>Instagram</span>
                 </li>
-                <li className={styles.socialListItem}>
+                <li className={styles.socialListItem} aria-label="Facebook">
                   <img src={facebook} alt="facebook" />
                   <span className={styles.socialListText}>Facebook</span>
                 </li>
-                <li className={styles.socialListItem}>
+                <li className={styles.socialListItem} aria-label="Youtube">
                   <img src={youtube} alt="youtube" />
                   <span className={styles.socialListText}>Youtube</span>
                 </li>
               </ul>
             </div>
 
-            <img src={risebg} alt="risebg" className={styles.riseBg} />
+            <img
+              src={risebg}
+              alt="Rise's company logo"
+              className={styles.riseBg}
+            />
           </div>
         </div>
       </footer>

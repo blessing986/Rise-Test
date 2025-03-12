@@ -8,9 +8,12 @@ const Transaction = () => {
     <div className={styles.container}>
       {/* Left Section */}
       <div className={styles.leftSection}>
-        <img src={transaction} alt="transaction" />
+        <img
+          src={transaction}
+          alt="Illustration of an online transaction process"
+        />
         <div className={styles.cardImage}>
-          <img src={card} alt="card" />
+          <img src={card} alt="Illustration of a virtual card" />
         </div>
       </div>
 
@@ -27,9 +30,17 @@ const Transaction = () => {
         </p>
 
         <div>
-          <button className={styles.ctaButton}>
-            <span>Request for your US virtual card</span>
-            <img src={arrowRightGreen} alt="arrowRightGreen" className={styles.icon} />
+          <button
+            className={styles.ctaButton}
+            type="button"
+            aria-label="Request your US virtual card">
+            <span>Request for your US virtual card </span>
+            <img
+              src={arrowRightGreen}
+              alt=""
+              className={styles.icon}
+              aria-hidden="true"
+            />
           </button>
         </div>
       </div>
@@ -38,4 +49,3 @@ const Transaction = () => {
 };
 
 export default Transaction;
-

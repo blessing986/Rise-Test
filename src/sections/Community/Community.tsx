@@ -6,10 +6,12 @@ import communitySmall from "../../assets/communitySmall.png";
 const Community = () => {
   return (
     <>
-      <div className={styles.container}>
+      <section className={styles.container} aria-labelledby="community-heading">
         <div className={styles.communityBox}>
           <div className={styles.textContainer}>
-            <h1 className={styles.heading}>Join the Rise Community</h1>
+            <h1 id="community-heading" className={styles.heading}>
+              Join the Rise Community
+            </h1>
 
             <p className={styles.description}>
               Our Telegram community surrounds you with others who can help you
@@ -18,26 +20,35 @@ const Community = () => {
             </p>
 
             <div>
-              <button className={styles.ctaButton}>
+              <button
+                className={styles.ctaButton}
+                aria-label="Join our community on Telegram">
                 <span>Join our community</span>
                 <img
                   src={arrowRight}
-                  alt="arrowRight"
+                  alt=""
                   className={styles.icon}
+                  aria-hidden="true"
                 />
               </button>
             </div>
           </div>
 
           <div className={styles.visibleOnSmall}>
-            <img src={communitySmall} alt="communitySmall" />
+            <img
+              src={communitySmall}
+              alt="Illustration of a diverse financial community"
+            />
           </div>
 
           <div className={styles.hiddenOnSmall}>
-            <img src={community} alt="community" />
+            <img
+              src={community}
+              alt="Larger illustration of a diverse financial community"
+            />
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };
